@@ -21,4 +21,12 @@ public class Matrix {
     public int getColumns() {
         return columns;
     }
+
+    public void set(int row, int column, String value) {
+        _data[row][column] = value;
+    }
+
+    public Object get(int row, int column) {
+        return _data[row][column];
+    }
 }
