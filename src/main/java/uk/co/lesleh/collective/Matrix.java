@@ -3,7 +3,7 @@ package uk.co.lesleh.collective;
 /**
  * Created by leslie on 27/11/14.
  */
-public class Matrix {
+public class Matrix<T> {
     private Object[][] _data;
     private int rows;
     private int columns;
@@ -22,11 +22,11 @@ public class Matrix {
         return columns;
     }
 
-    public void set(int row, int column, String value) {
+    public void set(int row, int column, T value) {
         _data[row][column] = value;
     }
 
-    public Object get(int row, int column) {
-        return _data[row][column];
+    public T get(int row, int column) {
+        return (T)_data[row][column];
     }
 }
