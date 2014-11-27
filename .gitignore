@@ -6,3 +6,5 @@
 build/
 out/
 dist/
+
+!gradle/wrapper/gradle-wrapper.jar
